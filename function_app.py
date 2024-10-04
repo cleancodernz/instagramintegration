@@ -11,7 +11,7 @@ def instagramintegration(req: func.HttpRequest) -> func.HttpResponse:
 
     # You'll need to handle getting an access token either via OAuth2 flow or store a long-lived access token.
     access_token = "<YOUR_INSTAGRAM_ACCESS_TOKEN>"
-
+ 
     images = get_instagram_media(access_token)
     if images:
         return func.HttpResponse(
